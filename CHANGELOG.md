@@ -3,6 +3,7 @@
   * Fixed bug causing the RoadOptions at the BehaviorAgent to not work as intended
   * CARLA is compatible with the last RoadRunner nomenclature for road assets
   * Fixed a bug when importing a FBX map with some **_** in the FBX name
+  * Added performance benchmarking section to documentation
 
 ## CARLA 0.9.11
 
