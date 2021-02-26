@@ -102,19 +102,7 @@ pipeline
                                 """
                                 bat """
                                     call ../setEnv64.bat
-                                    make package ARGS="--packages=AdditionalMaps --target-archive=AdditionalMaps --clean-intermediate"
-                                """
-                                bat """
-                                    call ../setEnv64.bat
-                                    make package ARGS="--packages=Town06_Opt --target-archive=AdditionalMaps --clean-intermediate"
-                                """
-                                bat """
-                                    call ../setEnv64.bat
-                                    make package ARGS="--packages=Town07_Opt --target-archive=AdditionalMaps --clean-intermediate"
-                                """
-                                bat """
-                                    call ../setEnv64.bat
-                                    make package ARGS="--packages=Town10HD_Opt --target-archive=AdditionalMaps --clean-intermediate"
+                                    make package ARGS="--packages=AdditionalMaps,Town06_Opt,Town07_Opt,Town10HD_Opt --target-archive=AdditionalMaps --clean"
                                 """
                             }
                             post {
