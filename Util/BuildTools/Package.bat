@@ -123,6 +123,7 @@ if %DO_PACKAGE%==true (
         CarlaUE4Editor^
         Win64^
         Development^
+        -WaitMutex^
         -FromMsBuild^
         "%ROOT_PATH%Unreal/CarlaUE4/CarlaUE4.uproject"
 
@@ -132,6 +133,7 @@ if %DO_PACKAGE%==true (
         CarlaUE4^
         Win64^
         Shipping^
+        -WaitMutex^
         -FromMsBuild^
         "%ROOT_PATH%Unreal/CarlaUE4/CarlaUE4.uproject"
 
