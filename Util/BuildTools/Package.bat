@@ -270,6 +270,7 @@ for /f "tokens=* delims=" %%i in ("!PACKAGES!") do (
 
         pushd "%CARLAUE4_ROOT_FOLDER%"
 
+        echo   - prepare
         REM # Prepare cooking of package
         call "%UE4_ROOT%/Engine/Binaries/Win64/UE4Editor.exe "^
         "%CARLAUE4_ROOT_FOLDER%/CarlaUE4.uproject"^
@@ -280,6 +281,7 @@ for /f "tokens=* delims=" %%i in ("!PACKAGES!") do (
         set /p PACKAGE_FILE=<%PACKAGE_PATH_FILE%
         set /p MAPS_TO_COOK=<%MAP_LIST_FILE%
 
+        echo   - cook
         REM # Cook maps
         call "%UE4_ROOT%/Engine/Binaries/Win64/UE4Editor.exe "^
         "%CARLAUE4_ROOT_FOLDER%/CarlaUE4.uproject"^
